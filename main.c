@@ -2,12 +2,12 @@
 
 int main(){
 
-    char input = ''
-    scanf("%c", &input)
+    char input = 's';
+    scanf("%c", &input);
 
     while(input != 'D'){
-        printf("input: %c", input)
-        scanf("%c", &input)
+        printf("input: %c\n", input);
+        scanf("%c", &input);
     }
     return 0;
 }
