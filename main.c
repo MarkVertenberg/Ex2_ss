@@ -2,7 +2,7 @@
 
 int main(){
 
-    input = ''
+    char input = ''
     scanf("%c", &input)
 
     while(input != 'D'){
