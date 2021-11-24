@@ -7,7 +7,7 @@ all: libmymat.a connections
 connections: main.o libmymat.a
 	$(CC) $(FLAGS) -o connections main.o libmymat.a
 
-libmymat.a: my_mat.o l
+libmymat.a: my_mat.o 
 	$(AR) -rcs libmymat.a my_mat.o
 
 main.o: main.c my_mat.h
