@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-int[N][N] insertToMatrix()
+int[][] insertToMatrix(){
     int matrix[N][N];
     for(int i = 0; i < N; i++){
         for(int j = 0; j < N; j++){
