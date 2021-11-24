@@ -1,9 +1,9 @@
 #ifndef __MY_LIB__
 #define __MY_LIB__
 
-#define SIZE_OF_MATRIX 10 
+#define N 10 
 
-int[][] insertToMatrix();
+int[N][N] insertToMatrix();
 
 int isTherePath(int i, int j);
 

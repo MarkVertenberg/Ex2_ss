@@ -3,7 +3,7 @@
 
 int main(){
 
-    int matrix[SIZE_OF_MATRIX][SIZE_OF_MATRIX];
+    int matrix[N][N];
     char input;
     scanf("%c", &input);
 
