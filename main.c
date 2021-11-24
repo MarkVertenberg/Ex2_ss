@@ -20,7 +20,7 @@ int main(){
     while(input != 'D'){
         switch(input){
             case 'A':
-                matrix = insertToMatrix();
+                matrix[N][N] = insertToMatrix();
                 print_mat(N, N, matrix);
                 break;
             default:
