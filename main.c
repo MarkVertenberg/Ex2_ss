@@ -21,7 +21,7 @@ int main(){
         switch(input){
             case 'A':
                 matrix = insertToMatrix();
-                print_mat(matrix);
+                print_mat(N, N, matrix);
                 break;
             default:
                 break;
