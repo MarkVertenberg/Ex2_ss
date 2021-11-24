@@ -20,8 +20,8 @@ int main(){
     while(input != 'D'){
         switch(input){
             case 'A':
-                matrix = insertToMatrix()
-                print_mat(matrix)
+                matrix = insertToMatrix();
+                print_mat(matrix);
                 break;
             default:
                 break;
