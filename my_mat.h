@@ -3,7 +3,7 @@
 
 #define N 10 
 
-int[N][N] insertToMatrix();
+int insertToMatrix();
 
 int isTherePath(int i, int j);
 
