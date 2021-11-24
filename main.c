@@ -1,12 +1,20 @@
 #include <stdio.h>
+#include "my_mat.h"
 
 int main(){
 
-    char input = 's';
+    int matrix[SIZE_OF_MATRIX][SIZE_OF_MATRIX];
+    char input;
     scanf("%c", &input);
 
     while(input != 'D'){
-        printf("input: %c\n", input);
+        switch(input){
+            case 'A':
+                matrix = insertToMatrix()
+                break;
+            default:
+                break;
+        }
         scanf("%c", &input);
     }
     return 0;

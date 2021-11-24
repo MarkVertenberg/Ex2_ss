@@ -3,7 +3,7 @@
 
 #define SIZE_OF_MATRIX 10 
 
-int[][] insertToMatrix(char[] values);
+int[][] insertToMatrix();
 
 int isTherePath(int i, int j);
 
