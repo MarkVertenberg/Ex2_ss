@@ -3,10 +3,10 @@
 
 #define N 10 
 
-int insertToMatrix();
+void insertToMatrix(int matrix[N][N]);
 
-int isTherePath(int i, int j);
+void isTherePath(int i, int j, int matrix[N][N]);
 
-int fastestPath(int i, int j);
+void fastestPath(int i, int j, int matrix[N][N]);
 
 #endif
