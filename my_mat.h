@@ -11,7 +11,7 @@ void insertToMatrix(int matrix[N][N]);
 // Floyd-Warshall Algorithm
 void floydWarshallAlgo(int matrix[N][N]);
 
-// IMPORTANT: isTherePath and shortestPath functions need to be used on matrixs that passed through the Algorithm!
+// IMPORTANT: isTherePath and shortestPath functions need to be used on matrixs that passed through the Floyd-Warshall Algorithm!
 
 // Returns if there path from i to j.
 int isTherePath(int i, int j, int matrix[N][N]);

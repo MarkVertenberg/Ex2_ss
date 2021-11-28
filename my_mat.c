@@ -15,17 +15,16 @@ void floydWarshallAlgo(int matrix[N][N]){
     for(int k = 0; k < N; k++){
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N; j++){
-                if(i == j){
-                    matrix[i][j] = 0;
-                }
-                else if(matrix[i][j] == 0){
-                    if(matrix[i][k] != 0 && matrix[k][j] != 0){
-                        matrix[i][j] = matrix[i][k] + matrix[k][j];
+                if(i != j && i != k && j != k){
+                    if(matrix[i][j] == 0){
+                        if(matrix[i][k] != 0 && matrix[k][j] != 0){
+                            matrix[i][j] = matrix[i][k] + matrix[k][j];
+                        }
                     }
-                }
-                else{
-                    if(matrix[i][j] > matrix[i][k] + matrix[k][j] && matrix[i][k] != 0 && matrix[k][j] != 0){
-                        matrix[i][j] = matrix[i][k] + matrix[k][j];
+                    else{
+                        if(matrix[i][j] > matrix[i][k] + matrix[k][j] && matrix[i][k] != 0 && matrix[k][j] != 0){
+                            matrix[i][j] = matrix[i][k] + matrix[k][j];
+                        }
                     }
                 }
             }
@@ -33,7 +32,7 @@ void floydWarshallAlgo(int matrix[N][N]){
     }
 }
 
-// Important: isTherePath and fastestPath functions need to be used on matrixs that passed through the Algorithm!
+// Important: isTherePath and fastestPath functions need to be used on matrixs that passed through the Floyd-Warshall Algorithm!
 
 // Returns if there path from i to j. 
 int isTherePath(int i, int j, int matrix[N][N]){
